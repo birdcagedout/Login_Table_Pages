@@ -1,0 +1,130 @@
+<!-- 출처: https://inpa.tistory.com/entry/CSS-%F0%9F%92%8D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%8A%A4%ED%83%80%EC%9D%BC-%F0%9F%96%8C%EF%B8%8F-%EB%AA%A8%EC%9D%8C?category=910228 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			
+		</script>
+		<link rel="stylesheet" href="login1.css">
+	</head>
+	<body>
+		<div id="container" class="container">
+			<!-- FORM SECTION -->
+			<div class="row">
+				<!-- 회원가입 -->
+				<div class="col align-items-center flex-col sign-up">
+					<div class="form-wrapper align-items-center">
+						<div class="form sign-up">
+							<div class="input-group">
+								<!--<i class='bx bxs-company'></i>-->
+								<input type="text" value="노원구청 교통행정과 자동차등록팀" readonly>
+							</div>
+							<div class="input-group">
+								<!--<i class='bx bxs-user'></i>-->
+								<input type="text" placeholder="사용자 ID">
+							</div>
+							<div class="input-group">
+								<!--<i class='bx bx-mail-send'></i>-->
+								<input type="text" placeholder="고유식별코드">
+							</div>
+							<div class="input-group">
+								<!--<i class='bx bxs-lock-alt'></i>-->
+								<input type="password" placeholder="비밀번호">
+							</div>
+							<div class="input-group">
+								<!--<i class='bx bxs-lock-alt'></i>-->
+								<input type="password" placeholder="비밀번호 확인">
+							</div>
+							<button>
+								회원가입
+							</button>
+							<p>
+								<span>
+									이미 가입하셨다면
+								</span>
+								<b onclick="toggle()" class="pointer" style="color: var(--primary-color); font-size: 2em;">
+									로그인
+								</b>
+								해주세요
+							</p>
+						</div>
+					</div>
+				
+				</div>
+				<!-- END 회원가입 -->
+				<!-- SIGN IN -->
+				<div class="col align-items-center flex-col sign-in">
+					<div class="form-wrapper align-items-center">
+						<div class="form sign-in">
+							<div class="input-group">
+								<!--<i class='bx bxs-user'></i>-->
+								<input type="text" placeholder="사용자 ID">
+							</div>
+							<div class="input-group">
+								<!--<i class='bx bxs-lock-alt'></i>-->
+								<input type="password" placeholder="비밀번호">
+							</div>
+							<button>
+								로그인
+							</button>
+							<p>
+								<b>
+									비밀번호를 분실하신 경우 부서 관리자에게 문의하세요
+								</b>
+							</p>
+							<p>
+								<span>
+									처음 방문하셨나요?
+								</span>
+								<b onclick="toggle()" class="pointer" style="color: var(--primary-color); font-size: 2em;">
+									회원가입
+								</b>
+								<span>
+									해주세요
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="form-wrapper">
+			
+					</div>
+				</div>
+				<!-- END SIGN IN -->
+			</div>
+			<!-- END FORM SECTION -->
+			<!-- CONTENT SECTION -->
+			<div class="row content-row">
+				<!-- SIGN IN CONTENT -->
+				<div class="col align-items-center flex-col">
+					<div class="text sign-in">
+						<h2>
+							로그인
+						</h2>
+		
+					</div>
+					<div class="img sign-in">
+			
+					</div>
+				</div>
+				<!-- END SIGN IN CONTENT -->
+				<!-- 회원가입 CONTENT -->
+				<div class="col align-items-center flex-col">
+					<div class="img sign-up">
+					
+					</div>
+					<div class="text sign-up">
+						<h2>
+							회원가입을<p>환영합니다
+						</h2>
+					</div>
+				</div>
+				<!-- END 회원가입 CONTENT -->
+			</div>
+			<!-- END CONTENT SECTION -->
+		</div>
+		<script type="text/javascript" src="login1.js"></script>
+	</body>
+</html>
