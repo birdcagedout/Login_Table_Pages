@@ -14,30 +14,32 @@
 				<!-- 회원가입 -->
 				<div class="col align-items-center flex-col sign-up">
 					<div class="form-wrapper align-items-center">
+
 						<div class="form sign-up">
 							<div class="input-group">
 								<!--<i class='bx bxs-company'></i>-->
-								<input type="text" value="노원구청 교통행정과" readonly>
+								<input type="text" name="signup_company" value="노원구청 교통행정과" readonly>
 							</div>
 							<div class="input-group">
 								<!--<i class='bx bxs-user'></i>-->
-								<input type="text" placeholder="사용자 ID">
+								<input type="text" name="signup_id" placeholder="사용자 ID" autofocus>
 							</div>
 							<div class="input-group">
 								<!--<i class='bx bx-mail-send'></i>-->
-								<input type="text" placeholder="고유식별코드">
+								<input type="text" name="signup_uid" placeholder="고유식별코드">
 							</div>
 							<div class="input-group">
 								<!--<i class='bx bxs-lock-alt'></i>-->
-								<input type="password" placeholder="비밀번호">
+								<input type="password" name="signup_pw1" placeholder="비밀번호">
 							</div>
 							<div class="input-group">
 								<!--<i class='bx bxs-lock-alt'></i>-->
-								<input type="password" placeholder="비밀번호 확인">
+								<input type="password" name="signup_pw2" placeholder="비밀번호 확인">
 							</div>
 							<button>
 								회원가입
 							</button>
+
 							<p>
 								<span>
 									이미 가입하셨다면
@@ -52,25 +54,27 @@
 				
 				</div>
 				<!-- END 회원가입 -->
-				<!-- SIGN IN -->
+
+
+				<!-- 로그인 -->
 				<div class="col align-items-center flex-col sign-in">
 					<div class="form-wrapper align-items-center">
+
 						<div class="form sign-in">
 							<div class="input-group">
 								<!--<i class='bx bxs-user'></i>-->
-								<input type="text" placeholder="사용자 ID">
+								<input type="text" name="login_id" placeholder="사용자 ID" autofocus>
 							</div>
 							<div class="input-group">
 								<!--<i class='bx bxs-lock-alt'></i>-->
-								<input type="password" placeholder="비밀번호">
+								<input type="password" name="login_pw" placeholder="비밀번호">
 							</div>
 							<button>
 								로그인
 							</button>
+
 							<p>
-								<b>
-									비밀번호를 분실하신 경우 부서 관리자에게 문의하세요
-								</b>
+								비밀번호를 분실하신 경우 부서 관리자에게 문의하세요
 							</p>
 							<p>
 								<span>
@@ -85,36 +89,39 @@
 							</p>
 						</div>
 					</div>
-					<div class="form-wrapper">
+					<!--<div class="form-wrapper">
 			
-					</div>
+					</div>-->
 				</div>
-				<!-- END SIGN IN -->
+				<!-- END 로그인 -->
 			</div>
 			<!-- END FORM SECTION -->
+
 			<!-- CONTENT SECTION -->
 			<div class="row content-row">
-				<!-- SIGN IN CONTENT -->
+				<!-- 로그인 CONTENT -->
 				<div class="col align-items-center flex-col">
 					<div class="text sign-in">
 						<h2>
-							로그인
+							급량Pay<p>로그인
 						</h2>
 		
 					</div>
 					<div class="img sign-in">
-			
+						<img src="cat2.png" style="max-width:100%; height:auto;">
 					</div>
 				</div>
-				<!-- END SIGN IN CONTENT -->
+				<!-- END 로그인 CONTENT -->
+
+
 				<!-- 회원가입 CONTENT -->
 				<div class="col align-items-center flex-col">
 					<div class="img sign-up">
-					
+						<img src="cat2.png" style="max-width:100%; height:auto;">
 					</div>
 					<div class="text sign-up">
 						<h2>
-							회원가입을<p>환영합니다
+							급량Pay<p>회원가입
 						</h2>
 					</div>
 				</div>
@@ -122,17 +129,18 @@
 			</div>
 			<!-- END CONTENT SECTION -->
 		</div>
+
 		<script>
-			let container = document.getElementById('container')
+			let container = document.getElementById('container');
 
 			toggle = () => {
-				container.classList.toggle('sign-in')
-				container.classList.toggle('sign-up')
-			}
+				container.classList.toggle('sign-in');
+				container.classList.toggle('sign-up');
+			};
 
 			setTimeout(() => {
-				container.classList.add('sign-in')
-			}, 200)
+				container.classList.add('sign-in');
+			}, 200);
 		</script>
 	</body>
 </html>
