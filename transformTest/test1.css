@@ -1,0 +1,28 @@
+.box-container {
+	display: flex;
+}
+.box1 {
+	width: 30vw;
+	height: 50vh;
+	border: 2px solid black;
+	background-color: rgba(255, 255, 0, 0.7);
+	/* 부드럽게 움직이는 효과 */
+	transition: 1s;
+}
+.box1:hover {
+    transform: translateY(-200%)
+    /*transform-origin: left top;*/
+}
+
+.box2 {
+	width: 30vw;
+	height: 50vh;
+	border: 2px solid black;
+	background-color: rgba(95, 177, 173, 0.7);
+	/* 부드럽게 움직이는 효과 */
+	transition: 1s;
+}
+.box2:hover {
+    transform: translateY(200%)
+    /*transform-origin: left top;*/
+}

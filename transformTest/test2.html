@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .rectangle {
+            width: 20%;
+            height: 30%;
+            background-color: #3498db; /* You can change the background color as desired */
+            margin: 0 10px; /* Add some spacing between the rectangles */
+            transition: 1s;
+        }
+
+				.rectangle.activeUp {
+					transform: translateY(-250%);
+				}
+
+				.rectangle.activeDown {
+					transform: translateY(250%);
+				}
+    </style>
+</head>
+<body>
+    <div class="rectangle" id="rec1"></div>
+    <div class="rectangle" id="rec2"></div>
+		<button onclick="move();">실행</button>
+
+		<script>
+			var elem1 = document.getElementById('rec1');
+			var elem2 = document.getElementById('rec2');
+			function move() {
+				elem1.classList.add('activeUp');
+				elem2.classList.add('activeDown');
+			}
+		</script>
+</body>
+</html>
