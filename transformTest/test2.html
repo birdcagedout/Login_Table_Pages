@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            overflow: hidden;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -21,18 +24,18 @@
             transition: 1s;
         }
 
-				.rectangle.activeUp {
-					transform: translateY(-250%);
-				}
+        .rectangle.activeUp {
+            transform: translateY(-250%);
+        }
 
-				.rectangle.activeDown {
-					transform: translateY(250%);
-				}
+        .rectangle.activeDown {
+            transform: translateY(250%);
+        }
     </style>
 </head>
 <body>
-    <div class="rectangle" id="rec1"></div>
-    <div class="rectangle" id="rec2"></div>
+    <div class="rectangle" id="rec1">가맹점(식당)<p>사용자</div>
+    <div class="rectangle" id="rec2">식권(직원)<p>사용자</div>
 		<button onclick="move();">실행</button>
 
 		<script>
