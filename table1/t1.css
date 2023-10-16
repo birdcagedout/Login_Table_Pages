@@ -110,6 +110,7 @@ background: #4B79A1;
 background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
 background: linear-gradient(to left, #4B79A1 , #283E51);        
 }
+
 h1 {
   text-align: center;
   font-size: 2.4em;
@@ -119,13 +120,16 @@ h1 {
   display: block;
   text-align: center;
 }
-/*h3 {
+
+h3 {
   display: inline-block;
   position: relative;
   text-align: center;
   font-size: 1.5em;
   color: #cecece;
 }
+
+/*
 h3:before {
   content: "\25C0";
   position: absolute;
