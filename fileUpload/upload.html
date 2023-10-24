@@ -2,13 +2,19 @@
   <head>
     <title>파일 업로드</title>
     <meta charset="UTF-8" />
+    <style>
+      * {
+        border-collapse: collapse;
+        margin: 10px 10px;
+      }
+    </style>
   </head>
 
   <body>
-		<div style="margin-bottom: 20px;">
+		<div>
 			<input type="file" id="fileUpload" accept='image/*' multiple='multiple' />
 		</div>
-		<div style="margin-bottom: 20px;" id="canvas">
+		<div id="canvas">
 			<!--<img id="previewImg" width="700" alt="이미지 영역" />-->
 		</div>
     <script src="upload.js"></script>
