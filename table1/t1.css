@@ -8,6 +8,7 @@
   min-width: 300px;
   max-width: 100%;
   border-collapse: collapse;
+  box-shadow: 2px 2px 4px 4px rgb(120, 120, 120);
 }
 
 .rwd-table tr:first-child {
@@ -105,11 +106,11 @@
 /* THE END OF THE IMPORTANT STUFF */
 
 /* Basic Styling */
-body {
+/*body {
 background: #4B79A1;
 background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
 background: linear-gradient(to left, #4B79A1 , #283E51);        
-}
+}*/
 
 h1 {
   text-align: center;
