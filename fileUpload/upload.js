@@ -20,10 +20,8 @@ const handleFiles = (e) => {
 		fileReader.onload = function () {
 			var img = document.createElement("img");
 			var br = document.createElement("br");
-			img.width = '700';
 			img.src = fileReader.result;
 			img.classList.add("uploaded");
-			img.style.border = '1px solid black';
 			canvas.appendChild(img);
 			canvas.appendChild(br);
 		};
