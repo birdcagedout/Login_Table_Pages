@@ -9,56 +9,67 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
+      crossorigin="anonymous" 
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'NEXON-Lv1-Gothic-OTF';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      .nav-link {
+        /*font-family: 'Black Han Sans', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;*/
+        /*font-family: 'GangwonEduPowerExtraBoldA';*/
+        font-family: 'NEXON-Lv1-Gothic-OTF', sans-serif;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <!-- 전체 틀 -->
     <div class="container">
       <!-- 헤더 -->
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <div class="col-md-3 mb-2 mb-md-0">
-          <a
-            href="/"
-            class="d-inline-flex link-body-emphasis text-decoration-none">
-            <!--<svg
-              class="bi"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap">
-              <use xlink:href="#bootstrap"></use>
-            </svg>-->
+          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
             <i class="bi bi-bootstrap" style="font-size: 4rem; color: cornflowerblue;"></i>
           </a>
         </div>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="#" class="nav-link px-2 link-secondary">
-              <i class="bi bi-house-fill" style="font-size: 1rem; color: cornflowerblue;"></i>
+            <a href="#" class="nav-link px-2 link-secondary fs-4">
+              <i class="bi bi-house" style="font-size: 2rem; color: cornflowerblue;"></i>
               홈
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link px-2">
-              <i class="bi bi-qr-code-scan" style="font-size: 1rem; color: cornflowerblue;"></i>
+            <a href="#" class="nav-link px-2 fs-4">
+              <i class="bi bi-qr-code-scan" style="font-size: 2rem; color: cornflowerblue;"></i>
               제품소개
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link px-2">
-              가격
+            <a href="#" class="nav-link px-2 fs-4">
+              <i class="bi bi-calendar3" style="font-size: 2rem; color: cornflowerblue;"></i>
+              이전달
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link px-2">
-              FAQs
+            <a href="#" class="nav-link px-2 fs-4">
+              <i class="bi bi-calendar3-week" style="font-size: 2rem; color: cornflowerblue;"></i>
+              이번달
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link px-2">
-              회사소개
+            <a href="#" class="nav-link px-2 fs-4">
+              <i class="bi bi-emoji-sunglasses" style="font-size: 2rem; color: cornflowerblue;"></i>
+              개발자
             </a>
           </li>
         </ul>
@@ -70,15 +81,12 @@
       </header>
 
       <!-- 사이드바-->
-      <div
+      <!--<div
         class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
         style="width: 280px">
         <a
           href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <!--<svg class="bi pe-none me-2" width="40" height="32">
-            <use xlink:href="#bootstrap"></use>
-          </svg>-->
           <i class="bi bi-bootstrap" style="font-size: 2rem; color: cornflowerblue;"></i>
           <span class="fs-4">Sidebar</span>
         </a>
@@ -86,45 +94,30 @@
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a href="#" class="nav-link active" aria-current="page">
-              <!--<svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#home"></use>
-              </svg>-->
               <i class="bi bi-house" style="font-size: 1rem; color: cornflowerblue;"></i>
               Home
             </a>
           </li>
           <li>
             <a href="#" class="nav-link link-body-emphasis">
-              <!--<svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#speedometer2"></use>
-              </svg>-->
               <i class="bi-speedometer2" style="font-size: 1rem; color: cornflowerblue;"></i>
               Dashboard
             </a>
           </li>
           <li>
             <a href="#" class="nav-link link-body-emphasis">
-              <!--<svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#table"></use>
-              </svg>-->
               <i class="bi-table" style="font-size: 1rem; color: cornflowerblue;"></i>
               Orders
             </a>
           </li>
           <li>
             <a href="#" class="nav-link link-body-emphasis">
-              <!--<svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#grid"></use>
-              </svg>-->
               <i class="bi-grid" style="font-size: 1rem; color: cornflowerblue;"></i>
               Products
             </a>
           </li>
           <li>
             <a href="#" class="nav-link link-body-emphasis">
-              <!--<svg class="bi pe-none me-2" width="16" height="16">
-                <use xlink:href="#people-circle"></use>
-              </svg>-->
               <i class="bi-people-fill" style="font-size: 1rem; color: cornflowerblue;"></i>
               Customers
             </a>
@@ -153,7 +146,7 @@
             <li><a class="dropdown-item" href="#">Sign out</a></li>
           </ul>
         </div>
-      </div>
+      </div>-->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
