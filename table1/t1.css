@@ -1,4 +1,3 @@
-/*@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
 
 * {font-family: 'Noto Sans KR', sans-serif;}
@@ -73,7 +72,8 @@
 }
 
 .memo {
-  width: 250px;
+  min-width: 200px;
+  max-width: 50%;
 }
 
 @media screen and (max-width: 701px) {
@@ -117,7 +117,7 @@ background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
 background: linear-gradient(to left, #4B79A1 , #283E51);        
 }*/
 
-h1 {
+/*h1 {
   text-align: center;
   font-size: 2.4em;
   color: #f2f2f2;
@@ -133,7 +133,7 @@ h3 {
   text-align: center;
   font-size: 1.5em;
   color: #cecece;
-}
+}*/
 
 /*
 h3:before {

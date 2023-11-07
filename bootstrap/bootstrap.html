@@ -13,21 +13,26 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap">
     <style>
-      .nav-link {
-        /*font-family: 'Black Han Sans', sans-serif;*/
+      * {
         font-family: 'Noto Sans KR', sans-serif;
-        /*font-family: 'GangwonEduPowerExtraBoldA';*/
-        /*font-family: 'NEXON-Lv1-Gothic-OTF', sans-serif;*/
+      }
+      .nav-link {
         font-weight: bold;
       }
       li {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
       }
       a.nav-link {
         text-align: center;
+      }
+      .btn-outline-danger {
+        padding: 0.8rem; 
+        margin: 16px 8px; 
+        font-weight: bold;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -42,7 +47,11 @@
               
               <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-black text-decoration-none">
                 <!--<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>-->
-                <img src="grpay_logo.png" width="200" alt="급량페이로고">
+                <div>
+                  <img class="d-inline" src="../assets/cat/cat_knife_fork_title.png" width="80" alt="급량페이로고">
+                  <!--<h2 class="nav-link text-black fs-6">급량페이</h2>-->
+                </div>
+                
               </a>
     
               <ul class="nav col-12 col-lg-auto justify-content-center my-md-0 text-small">
@@ -64,7 +73,7 @@
                   <a href="#" class="nav-link text-black">
                     <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>-->
                     <i class="bi bi-speedometer2 d-block mb-0 fs-3"></i>
-                    분석
+                    분석(예정)
                   </a>
                 </li>
                 <li>
@@ -75,9 +84,9 @@
                   </a>
                 </li>
               </ul>
-              <ul class="nav col-12 col-lg-auto justify-content-center my-md-0 text-small" style="margin-left: 3rem;">
+              <ul class="nav col-12 col-lg-auto justify-content-center my-md-0 text-small" style="margin: 0 1rem;">
                 <li>
-                  <button class="btn btn-danger d-inline-flex align-items-center" type="button" style="padding: 0.7rem;">
+                  <button class="btn btn-outline-danger d-inline-flex align-items-center" type="button">
                     로그아웃
                   </button>
                 </li>
