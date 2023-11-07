@@ -15,18 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-      @font-face {
-        font-family: 'NEXON-Lv1-Gothic-OTF';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-      }
       .nav-link {
-        /*font-family: 'Black Han Sans', sans-serif;
-        font-family: 'Noto Sans KR', sans-serif;*/
+        /*font-family: 'Black Han Sans', sans-serif;*/
+        font-family: 'Noto Sans KR', sans-serif;
         /*font-family: 'GangwonEduPowerExtraBoldA';*/
-        font-family: 'NEXON-Lv1-Gothic-OTF', sans-serif;
+        /*font-family: 'NEXON-Lv1-Gothic-OTF', sans-serif;*/
         font-weight: bold;
+      }
+      li {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      a.nav-link {
+        text-align: center;
       }
     </style>
   </head>
@@ -34,50 +35,57 @@
     <!-- 전체 틀 -->
     <div class="container">
       <!-- 헤더 -->
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-            <i class="bi bi-bootstrap" style="font-size: 4rem; color: cornflowerblue;"></i>
-          </a>
+      <header>
+        <div class="p-3 mb-3 border-bottom">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-black text-decoration-none">
+                <!--<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>-->
+                <img src="grpay_logo.png" width="200" alt="급량페이로고">
+              </a>
+    
+              <ul class="nav col-12 col-lg-auto justify-content-center my-md-0 text-small">
+                <li>
+                  <a href="#" class="nav-link text-secondary">
+                    <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>-->
+                    <i class="bi bi-house d-block mb-0 fs-3"></i>
+                    홈
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-black">
+                    <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>-->
+                    <i class="bi bi-table d-block mb-0 fs-3"></i>
+                    사용내역
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-black">
+                    <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>-->
+                    <i class="bi bi-speedometer2 d-block mb-0 fs-3"></i>
+                    분석
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link text-black">
+                    <!--<svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>-->
+                    <i class="bi bi-person-circle d-block mb-0 fs-3"></i>
+                    내계정
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav col-12 col-lg-auto justify-content-center my-md-0 text-small" style="margin-left: 3rem;">
+                <li>
+                  <button class="btn btn-danger d-inline-flex align-items-center" type="button" style="padding: 0.7rem;">
+                    로그아웃
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <a href="#" class="nav-link px-2 link-secondary fs-4">
-              <i class="bi bi-house" style="font-size: 2rem; color: cornflowerblue;"></i>
-              홈
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-2 fs-4">
-              <i class="bi bi-qr-code-scan" style="font-size: 2rem; color: cornflowerblue;"></i>
-              제품소개
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-2 fs-4">
-              <i class="bi bi-calendar3" style="font-size: 2rem; color: cornflowerblue;"></i>
-              이전달
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-2 fs-4">
-              <i class="bi bi-calendar3-week" style="font-size: 2rem; color: cornflowerblue;"></i>
-              이번달
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-2 fs-4">
-              <i class="bi bi-emoji-sunglasses" style="font-size: 2rem; color: cornflowerblue;"></i>
-              개발자
-            </a>
-          </li>
-        </ul>
-
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">로그인</button>
-          <button type="button" class="btn btn-primary">가입하기</button>
-        </div>
+        
       </header>
 
       <!-- 사이드바-->
